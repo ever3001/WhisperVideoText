@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "whispervideotext"
+version = "0.1.0"
+description = "Python package for extracting text from videos using the Whisper library"
+authors = [
+    "Ever ATILANO <ever.atilano3001@gmail.com>"
+]
+license = "Apache-2.0"
+
+readme = "README.md"
+
+homepage = "https://github.com/ever3001/WhisperVideoText"
+repository = "https://github.com/ever3001/WhisperVideoText"
+keywords = ["video", "transcription", "Whisper"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+moviepy = "^1.0.3"
+whisper = "^1.1.10"
+
+[tool.poetry.scripts]
+whispervideotext = "whispervideotext.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
